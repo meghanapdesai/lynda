@@ -23,3 +23,5 @@ def someFunction():
 someFunction()
 print f
 
+del f # delete the variable and assignment so below should give error
+print f
