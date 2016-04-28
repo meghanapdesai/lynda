@@ -16,6 +16,12 @@ print "string type " + str(123)
 
 # Global vs. local variables in functions
 def someFunction():
-  #global f
+  #global f #if we uncomment out code it affects the above value of f (outside of the function)
   f = "def"
   print f
+  
+someFunction()
+print f
+
+del f # delete the variable and assignment so below should give error
+print f
