@@ -34,7 +34,7 @@ for day in calendar.day_name:
 # we can use this script:
 for m in range(1,13):
   # returns an array of weeks that represent the month
-  cal = calendar.monthcalendar(2013, m)
+  cal = calendar.monthcalendar(2016, m)
   # The first Friday has to be within the first two weeks
   weekone = cal[0]
   weektwo = cal[1]
