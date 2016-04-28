@@ -16,7 +16,7 @@ print "string type " + str(123)
 
 # Global vs. local variables in functions
 def someFunction():
-  #global f
+  #global f #if we uncomment out code it affects the above value of f (outside of the function)
   f = "def"
   print f
   
