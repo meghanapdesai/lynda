@@ -20,6 +20,6 @@ def someFunction():
   f = "def"
   print f
   
-somefunction()
+someFunction()
 print f
 
