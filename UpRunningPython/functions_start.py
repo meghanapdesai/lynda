@@ -37,5 +37,12 @@ func1() # Calling function
 func2(10,20) # Calling function
 #print func2(10,20) # Calling function and then printing return value (None)
 
+# Call cube function and print return value
 print cube(3)
 
+print power(2) # default x to 1 as x not specified
+print power(2,3) # x=3 so 2^3
+print power(x=3, num=2) # can figure out even if out of order if name along with
+
+# call this one to get result of adding all args
+print multi_add(4,5,10,4)
