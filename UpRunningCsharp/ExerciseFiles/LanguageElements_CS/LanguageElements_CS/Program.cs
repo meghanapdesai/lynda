@@ -55,32 +55,29 @@ namespace LanguageElements_CS
                 Console.WriteLine(counter);
             }
 
-
             // foreach loop
 
-            //int[] arrInts = new int[] { 3, 5, 6, 23, 95, 45, 32 };
-            //foreach (int item in arrInts)
-            //{
-            //    Console.WriteLine(item);
-            //}
-
+            int[] arrInts = new int[] { 3, 5, 6, 23, 95, 45, 32 };
+            foreach (int item in arrInts)
+            {
+                Console.WriteLine(item);
+            }
 
             // while loop 
-            //int sentinel = 0;
-            //while (sentinel < 10)
-            //{
-            //    Console.WriteLine(sentinel);
-            //    sentinel++;
-            //}
-
+            int sentinel = 0;
+            while (sentinel < 10)
+            {
+                Console.WriteLine(sentinel);
+                sentinel++;
+            }
 
             // do while loop 
-            //int sentinel = 10;
-            //do
-            //{
-            //    Console.WriteLine(sentinel);
-            //    sentinel++;
-            //} while (sentinel < 10);
+            int sentinel = 10;
+            do
+            {
+                Console.WriteLine(sentinel);
+                sentinel++;
+            } while (sentinel < 10);
 
             #endregion
 
