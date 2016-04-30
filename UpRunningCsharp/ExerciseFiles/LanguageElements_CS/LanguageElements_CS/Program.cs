@@ -10,8 +10,10 @@ namespace LanguageElements_CS
     {
         static void Main(string[] args)
         {
-            //Concatenate("First ", "Last");
-            //string word = Concatenate("First ", "Last");
+            // Three ways for doing the same thing
+            Concatenate("First ", "Last");
+            string word = Concatenate("First ", "Last");
+            Console.WriteLine(word);
             Console.WriteLine(Concatenate("First ", "Last"));
 
             #region Data Types
@@ -128,13 +130,11 @@ namespace LanguageElements_CS
         }
 
         // Create a non-returning function here that concatenates two strings and just displays the result in screen
-        //static void Concatenate(string first, string last)
-        //{
-        //    string whole = first + last;
-        //    Console.WriteLine(whole);
-        //}
-
-
+        static void Concatenate(string first, string last)
+        {
+            string whole = first + last;
+            Console.WriteLine(whole);
+        }
 
         // Create a returning function here that concatenates two strings and returns the result
         static string Concatenate(string first, string last)
