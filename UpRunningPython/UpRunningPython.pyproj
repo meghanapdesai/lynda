@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8fdaa4c4-7b5c-42cc-9025-ae2830871df3}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>calendars_start.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+    <InterpreterVersion />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="samplehtml.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="calendars_start.py" />
+    <Compile Include="classes_start.py" />
+    <Compile Include="conditionals_start.py" />
+    <Compile Include="dates_start.py" />
+    <Compile Include="files_start.py" />
+    <Compile Include="formatting_start.py" />
+    <Compile Include="functions_start.py" />
+    <Compile Include="helloworld_start.py" />
+    <Compile Include="htmlparsing_start.py" />
+    <Compile Include="inetdata_start.py" />
+    <Compile Include="jsondata_start.py" />
+    <Compile Include="loops_start.py" />
+    <Compile Include="ospathutils_start.py" />
+    <Compile Include="shell_start.py" />
+    <Compile Include="timedeltas_start.py" />
+    <Compile Include="variables_start.py" />
+    <Compile Include="xmlparsing_start.py" />
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>
