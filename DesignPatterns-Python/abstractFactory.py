@@ -27,7 +27,7 @@ class PetStore:
 	def show_pet(self):
 		""" Utility method to display the details of the objects retured by the DogFactory """
 
-		pet = self._pet_factory.get_pet
+		pet = self._pet_factory.get_pet()
 		pet_food = self._pet_factory.get_food()
 		
 		print("Our pet is '{}'!".format(pet))
@@ -36,8 +36,10 @@ class PetStore:
 
 
 #Create a Concrete Factory
+factory = DogFactory()
 
 #Create a pet store housing our Abstract Factory
-
+shop = PetStore(factory)
 
 #Invoke the utility method to show the details of our pet
+shop.show_pet()
