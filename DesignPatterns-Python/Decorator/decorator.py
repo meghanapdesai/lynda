@@ -17,6 +17,8 @@ def make_blink(function):
 	return decorator
 
 #Apply the decorator here!
+@make_blink
+
 def hello_world():
 	"""Original function! """
 
@@ -26,8 +28,8 @@ def hello_world():
 print (hello_world())
 
 #Check if the function name is still the same name of the function being decorated
-
+print(hello_world.__name__)
 
 #Check if the docstring is still the same as that of the function being decorated
-
+print(hello_world.__doc__)
 
